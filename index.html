@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Solar System Simulator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Live Solar System Simulator 🚀</h1>
+    <div class="controls">
+        <button id="zoomIn">➕ Zoom In</button>
+        <button id="zoomOut">➖ Zoom Out</button>
+        <button id="nightMode">🌙 Night Mode</button>
+    </div>
+    <canvas id="solarCanvas" width="900" height="700"></canvas>
+    <div id="planetInfo" class="planet-info" style="display:none;">
+        <button id="closeInfo">✖</button>
+        <h2 id="planetName"></h2>
+        <div id="planetDetails"></div>
+    </div>
+    <footer>
+        <p>Made with ❤️ | Explore our Solar System!</p>
+        <p>
+            Data source: <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">NASA</a>
+        </p>
+    </footer>
+    <script src="solarsystem.js"></script>
+</body>
+</html>
